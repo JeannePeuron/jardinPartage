@@ -50,9 +50,11 @@ public class GreenHouse {
         int seedCount = 0;
         int sproutCount = 0;
         int flowerCount = 0;
+
         for (Plant plant : this.plants) {
             if (plant != null) {
                 String status = plant.getStatus();
+
                 if (status.equals("seed")) {
                     seedCount++;
                 } else if (status.equals("sprout")) {
@@ -62,11 +64,11 @@ public class GreenHouse {
                 }
             }
         }
+
         System.out.println("Seed : " + seedCount);
         System.out.println("Sprout : " + sproutCount);
         System.out.println("Flower : " + flowerCount);
     }
-
 }
 
 
